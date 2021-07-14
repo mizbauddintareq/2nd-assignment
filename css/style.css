@@ -16,7 +16,8 @@ body {
 
 header {
     background-color: #2D25A0;
-    height: 677px;
+    width: 100%;
+    height: 667px;
 }
 
 footer {
@@ -26,7 +27,7 @@ footer {
 /* Utilities Styles Ends */
 
 /* Header Styles Starts */
-header:hover .banner-image {
+header :hover .banner-image {
     transform: scale(1.2);
 }
 
