@@ -1,0 +1,182 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Utilities Styles Starts */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.container {
+    margin: 70px 0;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background-color: #2D25A0;
+    height: 677px;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+/* Utilities Styles Ends */
+
+/* Header Styles Starts */
+header:hover .banner-image {
+    transform: scale(1.3);
+}
+
+.banner {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 0;
+    align-items: center;
+}
+
+.banner-tittle {
+    font-size: 64px;
+    color: #FFFFFF;
+}
+
+.banner-button a {
+    background-color: #E02C6D;
+    padding: 10px 40px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.banner-button span {
+    margin-left: 8px;
+}
+
+.banner-image img {
+    width: 556px;
+    height: 438px;
+}
+
+.banner-image {
+    overflow: hidden;
+    transition: transform 2s ease-in-out;
+}
+
+/* Header Styles Ends */
+
+/* Player Styles Starts */
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+}
+
+.player {
+    width: 330px;
+    height: 460px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    margin-left: 30px;
+
+}
+
+.player-image img {
+    width: 100%;
+}
+
+.player-name h3 {
+    font-size: 28px;
+}
+
+/* Player Styles Ends */
+
+/* Footer Styles Starts */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    width: 484px;
+    height: 110px;
+}
+
+.social-icon i {
+    color: #969BAB;
+    border-radius: 50%;
+    margin-left: 14px;
+    background-color: #c9c8c754;
+    padding: 8px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+}
+
+.footer-content p {
+    font-size: 18px;
+}
+
+/* Footer Styles Ends */
+
+/* -----------------------------------------
+            Media Queries 
+-----------------------------------------*/
+/* For Mobile Devices Starts */
+@media only screen and (max-width: 688px) {
+
+    header {
+        height: 100%;
+        width: 100%;
+    }
+
+    header:hover .banner-image {
+        transform: none;
+    }
+
+    .banner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0;
+    }
+
+    .banner-image {
+        margin-top: 50px;
+    }
+
+    .banner-image img {
+        width: 329px;
+        height: 260px;
+    }
+
+    .banner-tittle {
+        font-size: 36px;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 24px;
+    }
+
+    .player {
+        padding: 10px;
+        margin: 0;
+
+    }
+
+    .logo img {
+        width: 170px;
+        height: 70px;
+    }
+}
+
+/* For Mobile Devices Ends */
