@@ -26,7 +26,7 @@ footer {
 
 /* Header Styles Starts */
 header:hover .banner-image {
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 
 .banner {
@@ -124,7 +124,7 @@ header:hover .banner-image {
 /* -----------------------------------------
             Media Queries 
 -----------------------------------------*/
-/* For Mobile Devices Starts */
+/*Responsive For Mobile Devices Starts */
 @media only screen and (max-width: 688px) {
 
     header {
@@ -179,4 +179,8 @@ header:hover .banner-image {
     }
 }
 
-/* For Mobile Devices Ends */
+/*Responsive For Mobile Devices Ends */
+
+/*Responsive For Tablet Devices Starts */
+
+/*Responsive For Tablet Devices Ends */
