@@ -182,5 +182,34 @@ header:hover .banner-image {
 /*Responsive For Mobile Devices Ends */
 
 /*Responsive For Tablet Devices Starts */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    header {
+        height: 100%;
+        width: 100%;
+    }
+
+    header:hover .banner-image {
+        transform: none;
+    }
+
+    .banner-tittle {
+        font-size: 36px;
+    }
+
+    .banner-image img {
+        width: 329px;
+        height: 260px;
+    }
+
+    .players {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 24px;
+    }
+
+    .player {
+        margin: 0;
+    }
+}
 
 /*Responsive For Tablet Devices Ends */
