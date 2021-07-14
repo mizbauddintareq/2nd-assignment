@@ -61,7 +61,7 @@ header:hover .banner-image {
 
 .banner-image {
     overflow: hidden;
-    transition: transform 2s ease-in-out;
+    transition: transform 2s ease-in;
 }
 
 /* Header Styles Ends */
@@ -245,8 +245,9 @@ header:hover .banner-image {
     }
 
     .moment {
-        height: 85%;
-        width: 85%;
+        height: 75%;
+        width: 75%;
+        margin-left: 15px;
     }
 
     .news-box {
