@@ -1,5 +1,6 @@
-/* Google Font */
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
 
 /* Utilities Styles Starts */
 body {
@@ -92,6 +93,66 @@ header:hover .banner-image {
 
 /* Player Styles Ends */
 
+/* Best Moments Styles Starts */
+.best-moments {
+    margin-top: 70px;
+}
+
+.moments {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 24px;
+    background-color: white;
+
+}
+
+.moment {
+    display: flex;
+    justify-content: center;
+}
+
+/* Best Moments Styles Ends */
+
+/* Latest News Styles Starts */
+.latest-news {
+    margin-top: 70px;
+}
+
+.section-tittle {
+    font-size: 64px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color: #E02C6D;
+
+}
+
+.news-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+}
+
+.news {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.news-thumbnail img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.read-button a {
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Latest News Styles Ends */
+
 /* Footer Styles Starts */
 .footer-content {
     display: flex;
@@ -121,9 +182,10 @@ header:hover .banner-image {
 
 /* Footer Styles Ends */
 
-/* -----------------------------------------
-            Media Queries 
------------------------------------------*/
+/* ---------------------------------------------------------------------
+                      Media Queries Starts
+---------------------------------------------------------------------*/
+
 /*Responsive For Mobile Devices Starts */
 @media only screen and (max-width: 688px) {
 
@@ -173,6 +235,24 @@ header:hover .banner-image {
 
     }
 
+    .section-tittle {
+        font-size: 28px;
+    }
+
+    .moments {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .moment {
+        height: 85%;
+        width: 85%;
+    }
+
+    .news-box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .logo img {
         width: 170px;
         height: 70px;
@@ -210,6 +290,24 @@ header:hover .banner-image {
     .player {
         margin: 0;
     }
+
+    .moments {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .moment iframe {
+        height: 415px;
+        width: 660px;
+    }
+
+    .news-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /*Responsive For Tablet Devices Ends */
+
+/* ---------------------------------------------------------------------
+                      Media Queries Ends
+---------------------------------------------------------------------*/
